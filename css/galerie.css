@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9f9;
+    color: #333;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    color: #2c3e50;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Header */
+.header {
+    background: url('images/beach_header.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.header-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+/* Gallery */
+.gallery {
+    padding: 40px 20px;
+}
+
+.room {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.room h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+.room-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.room-images figure {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.room-images figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.room-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
